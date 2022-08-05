@@ -1,0 +1,201 @@
+.mySwiper {}
+
+.swiper-button-directions {
+
+    .swiper-button-next {
+        right: 83px;
+    }
+
+    .swiper-button-prev {
+
+        left: 73%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 62%;
+        z-index: 15;
+
+
+    }
+
+    @media (max-width:1200px) {
+        .swiper-button-next {
+            right: 83px;
+        }
+
+        .swiper-button-prev {
+
+            left: 84%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 58%;
+            z-index: 15;
+
+
+        }
+    }
+
+    @media (max-width:992px) {
+        .swiper-button-next {
+            right: 4%;
+        }
+
+    }
+
+    @media (max-width:768px) {
+        .swiper-button-next {
+            right: 169px;
+        }
+
+        .swiper-button-prev {
+            left: 67%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 48%;
+            z-index: 15;
+
+
+        }
+    }
+
+    @media (max-width:760px) {
+        .swiper-button-next {
+            right: 14%;
+        }
+
+        .swiper-button-prev {
+            left: 67%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 48%;
+            z-index: 15;
+
+
+        }
+    }
+
+    .swiper-button-next::after {
+        content: "\1F812";
+    }
+
+    .swiper-button-prev::after {
+        content: "\1F810";
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+.swiper-box__menu {
+    position: absolute;
+    z-index: 5;
+    width: 600px;
+    height: 100px;
+    bottom: 20px;
+    right: 0;
+    background: #030303;
+
+    :hover .tab-swiper-item {
+        background: white;
+    }
+
+    @media (max-width:1200px) {
+
+        width: 100%;
+    }
+
+    @media (max-width:992px) {
+        display: inline-flex;
+        justify-content: space-between;
+        bottom: 0;
+    }
+
+    @media (max-width:768px) {}
+}
+
+
+
+.swiper-pagination {
+    // position: absolute;
+
+    width: 80px;
+    height: 40px;
+    margin: 0px 0px 7px 73px;
+    margin-right: 0;
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    @media (max-width:1200px) {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: -29px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    @media (max-width:992px) {
+        margin: 0;
+        margin-bottom: 7px;
+        right: 10%;
+    }
+
+    @media (max-width:768px) {
+        right: auto;
+        left: calc(0px + (200 - 160) * ((100vw - 320px) / (768 - 320)));
+        margin-bottom: 19px;
+    }
+}
+
+
+.swiper-scrollbar {
+    position: relative;
+    z-index: 15;
+    margin: 53px 0px 0px 200px;
+    width: 190px;
+    height: 16px;
+
+    color: black;
+    background: white;
+
+    @media (max-width:1200px) {
+        position: absolute;
+        width: 160px;
+        right: 200px;
+    }
+
+    @media (max-width:992px) {}
+
+    @media (max-width:768px) {
+        margin: 40px 90px 0px 0px;
+    }
+
+    @media (max-width:700px) {
+        right: 20%;
+        width: calc(60px + (200 - 30) * ((100vw - 320px) / (700 - 320)));
+    }
+}
+
+.swiper-scrollbar-drag {
+    background: #D2B183;
+    width: 16px;
+    height: 16px;
+    border-radius: 30%;
+}
+
+
+
+.swiper-pagination .swiper-pagination-fraction .swiper-pagination-horizontal {}

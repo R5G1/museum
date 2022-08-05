@@ -1,0 +1,355 @@
+.video {
+    .swiper-slide iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper {
+        width: 100%;
+        max-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .video-m__media-link {
+        width: 100%;
+    }
+
+    .video__slaider-video-link {
+        min-width: 1460px;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .swiper-slide-content {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &__media-button,
+        &__media-button-stop {
+            position: absolute;
+            top: 30%;
+            left: 42%;
+            right: 50%;
+
+            @media (max-width:1200px) {
+                top: 28%;
+
+                @media (max-width:992px) {}
+
+                @media (max-width:768px) {
+                    top: 32%;
+                    left: 44%;
+                }
+            }
+
+            :hover {
+                width: 240px;
+                opacity: 0;
+
+                @media (max-width:1200px) {
+                    width: 162px;
+                }
+
+                @media (max-width:768px) {
+                    width: 92px;
+                }
+
+            }
+
+            &:active {
+                opacity: 0;
+            }
+        }
+    }
+
+    .mySwiper2 {
+        height: 80%;
+        width: 100%;
+        // width: 1440px;
+        max-height: 650px;
+        margin-bottom: 5px;
+
+        .video__slaider-video {
+            height: 650px;
+        }
+    }
+
+    .mySwiper1 {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        margin-top: 65px;
+
+
+    }
+
+    .mySwiper1 .swiper-slide {
+        display: flex;
+        justify-content: center;
+        opacity: 0.4;
+        width: 452px;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .mySwiper1 .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .mySwiper1 .video__slaider-video-link2 {
+        height: 254px;
+    }
+
+
+
+}
+
+.video {
+    .video-p__player-conteiner {
+        height: 50px;
+    }
+
+    .video-p {
+
+        &__player-controls {
+            display: flex;
+            align-items: center;
+            background: #000;
+            height: 85px;
+            margin: -5px 0px 0px 0px;
+
+            @media (max-width:1200px) {
+                max-width: 100%;
+                height: 60px;
+
+            }
+        }
+
+        &__start-button {
+
+            height: 50px;
+            width: 31px;
+            background: url('../assets/vidio/play.svg') center center no-repeat;
+            background-size: 23px 31px;
+            margin: 0px 50px 0px 30px;
+
+            @media (max-width:1200px) {
+                height: 30px;
+                width: 40px;
+                margin: 0px 30px 0px 40px;
+
+            }
+
+            @media (max-width:992px) {}
+
+            @media (max-width:768px) {
+                width: 50px;
+                margin: 0px 32px 0px 20px;
+                background-size: 20px 30px;
+            }
+
+            @media (max-width:420px) {
+                background-size: 15px 30px;
+            }
+
+            &:hover {
+                position: relative;
+                background: url('../assets/vidio/play2.svg') center center no-repeat;
+                background-size: 24px 32px;
+                transition: background-size 0.1s ease 0s;
+
+                @media (max-width:1200px) {
+                    background-size: 24px 32px;
+
+                }
+
+                @media (max-width:768px) {
+
+                    background-size: 20px 30px;
+                }
+            }
+
+
+
+        }
+
+        &__progress {
+            width: 929px;
+
+            @media (max-width:992px) {}
+
+            @media (max-width:768px) {
+                position: absolute;
+                margin: 0px 0px 55px 0px;
+
+                width: 97%;
+            }
+        }
+
+        &__sound {
+            height: 50px;
+            width: 40px;
+            background: url('../assets/vidio/volume.svg') center center no-repeat;
+            background-size: 32px 34px;
+            margin: 0px 50px 0px 50px;
+            transition: background-size 0.1s ease 0s;
+
+            @media (max-width:1200px) {
+                background-size: 26px 31px;
+                margin: 0px 35px 0px 30px;
+
+            }
+
+            @media (max-width:992px) {}
+
+            @media (max-width:768px) {
+                margin: 0px 30px 0px 0px;
+                background-size: 26px 31px;
+            }
+
+            @media (max-width:420px) {
+                background-size: 15px 30px;
+            }
+
+            &:hover {
+                position: relative;
+                background: url('../assets/vidio/volume2.svg') center center no-repeat;
+                background-size: 27px 30px;
+                transition: background-size 0.1s ease 0s;
+
+                @media (max-width:1200px) {
+                    background-size: 26px 26px;
+
+                }
+            }
+        }
+
+        &__progress-sound {
+            width: 155px;
+
+            @media (max-width:992px) {}
+
+            @media (max-width:768px) {
+                width: 100%;
+            }
+        }
+
+        &__windowow {
+            height: 50px;
+            width: 35px;
+            background: url('../assets/vidio/Frame.svg') center center no-repeat;
+            background-size: 35px 35px;
+            margin: 0px 30px 0px 50px;
+
+            @media (max-width:1200px) {
+                background-size: 26px 26px;
+                width: 45px;
+                margin: 0px 37px 0px 43px;
+            }
+
+            @media (max-width:992px) {}
+
+            @media (max-width:768px) {
+                margin: 0px 30px 0px 30px;
+            }
+
+            @media (max-width:420px) {
+                background-size: 15px 30px;
+            }
+
+            &:hover {
+                position: relative;
+                background: url('../assets/vidio/Frame2.svg') center center no-repeat;
+                background-size: 40px 40px;
+                transition: background-size 0.1s ease 0s;
+
+                @media (max-width:1200px) {
+                    background-size: 28px 28px;
+
+                }
+            }
+        }
+    }
+}
+
+
+.swiper-pagination-battom {
+    display: flex;
+    justify-content: space-evenly;
+
+    .swiper-pagination2 {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #999999;
+
+            :active {
+                background: #333333;
+            }
+        }
+    }
+
+
+    .swiper-button-next2 {
+        display: flex;
+        position: absolute;
+        margin-top: 20px;
+        right: 45.5%;
+
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: url('/assets/vidio/poster/R2.svg') 0 0 no-repeat;
+
+        }
+
+        &:hover,
+        ::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: url('/assets/vidio/poster/R2.1.svg') 0 0 no-repeat;
+
+
+        }
+    }
+
+    .swiper-button-prev2 {
+        display: flex;
+        position: absolute;
+        margin-top: 20px;
+        left: 46%;
+
+        &::before {
+            content: "";
+            width: 22px;
+            height: 22px;
+            background: url('/assets/vidio/poster/L1.svg') 0 0 no-repeat;
+
+        }
+
+        &:hover,
+        ::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: url('/assets/vidio/poster/L1.1.svg') 0 0 no-repeat;
+
+        }
+    }
+
+}
